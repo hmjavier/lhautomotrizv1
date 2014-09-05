@@ -58,7 +58,7 @@ public class AutomakerController {
 	 
 	 
 		
-		public static List<String> getCarsByAutomaker(){
+		public static  String[] getCarsByAutomaker(String name){
 			List<String> cars =  new ArrayList<String>();		
 			
 			 Database db =  new Database();
@@ -66,12 +66,26 @@ public class AutomakerController {
 			 HashMap<String,Object> resultSet =  new HashMap<String, Object>();
 			 
 			 HashMap<String,Object> query = new HashMap<String, Object>();
-			 query.put("name", "Audi");
-			 //resultSet = db.select(query, collectionName);
+			 query.put("name", name);
+			 resultSet = db.select(query, "automakers");
+			 //System.out.println(resultSet.get("cars"));
+			 
+			 
+			 String[] carsString ;
+			 
+			 carsString = resultSet.get("cars").toString().split(",");
+			 
+			 for(int i = 0 ; i < carsString.length ; i++ )
+			 {
+				System.out.println(carsString[i]);
+			 }
+			 
 			 DatabaseService.releaseService(db);
 			 
-			return cars;
+			return carsString;
 		}
+		
+		
 		
 		public static List<HashMap<Object,Object>> getAll(){
 			List<HashMap<Object,Object>> resultSet = new ArrayList<HashMap<Object,Object>>();
