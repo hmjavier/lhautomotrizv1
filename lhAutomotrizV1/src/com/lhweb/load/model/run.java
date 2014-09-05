@@ -8,11 +8,11 @@ public class run {
 	public static void main(String[] args) {
 		
 		
-		//Automaker automaker = new Automaker("15","Hyundai", Arrays.asList("H2","H3"));		
-		//automaker.create();
+		Automaker automaker = new Automaker("24","Mercury", Arrays.asList("capri","cougar","grand marquis","lynx","mariner","milan","montego","mountainer","mystique","sable","topaz"));		
+		automaker.create();
 		//AutomakerController.getAll();
 		
-		AutomakerController.getCarsByAutomaker("Hummer");
+		//AutomakerController.getCarsByAutomaker("Hummer");
 
 	
 		
