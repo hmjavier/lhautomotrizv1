@@ -250,21 +250,114 @@
                 <div class="col-lg-3">
                     <div class="panel panel-primary">
                         <div class="panel-body">
-							<div class="panelCenterImg"><img alt="uno" src="css/images/mazda.jpg"></div>
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mitsubishi.jpg"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="panel panel-primary">
                         <div class="panel-body">
-							<div class="panelCenterImg"><img alt="uno" src="css/images/mercedesbenz.jpg"></div>
+							<div class="panelCenterImg"><img alt="uno" src="css/images/nissan.jpg"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="panel panel-primary">
                         <div class="panel-body">
-							<div class="panelCenterImg"><img alt="uno" src="css/images/mercury.jpg"></div>
+							<div class="panelCenterImg"><img alt="uno" src="css/images/peugeot.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/pontiac.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/porche.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/renault.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/rover.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/saab.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/saturn.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/seat.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/subaru.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/suzuki.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/toyota.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/volvo.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/vw.jpg"></div>
                         </div>
                     </div>
                 </div>                
