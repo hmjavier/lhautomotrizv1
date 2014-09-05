@@ -58,7 +58,7 @@ public class AutomakerController {
 	 
 	 
 		
-		public static  String[] getCarsByAutomaker(String name){
+		public static  String[] getCarsByAutomaker(String pictureName){
 			List<String> cars =  new ArrayList<String>();		
 			
 			 Database db =  new Database();
@@ -66,7 +66,7 @@ public class AutomakerController {
 			 HashMap<String,Object> resultSet =  new HashMap<String, Object>();
 			 
 			 HashMap<String,Object> query = new HashMap<String, Object>();
-			 query.put("name", name);
+			 query.put("picture", pictureName);
 			 resultSet = db.select(query, "automakers");
 			 //System.out.println(resultSet.get("cars"));
 			 
