@@ -102,6 +102,7 @@
     <!-- LH AUTOMOTRIZ -->
 	<script src="js/validator.js"></script>
 	<script type='text/javascript' src="js/allJs.js"></script>
+	
 	<script type="text/javascript">
 	$(document).ready( function() {
 		$("#registrar").click(function(env){

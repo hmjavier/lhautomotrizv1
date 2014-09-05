@@ -45,7 +45,7 @@
     <div id="wrapper">
     	<!-- MENU  -->		
 		<%@ include file="menu.jsp" %>
-        <div id="page-wrapper">
+        <div id="page-wrapper" id="gridLogos" class="gridLogos">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">LH Automotriz Home </h1>
@@ -53,101 +53,222 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
+            <div class="row" >
+                <div class="col-lg-3">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-comments fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div>New Comments!</div>
-                                </div>
-                            </div>
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/alfaromeo.jpg"></div>
                         </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
-                                </div>
-                            </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/amcvam.jpg"></div>
                         </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
-                                </div>
-                            </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/audi.jpg"></div>
                         </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-support fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
-                                </div>
-                            </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/bmw.jpg"></div>
                         </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
                     </div>
-                </div>
+                </div>                
             </div>
             <!-- /.row -->
-            <div class="row">
-
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/cadillac.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/chevrolet.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/chrysler.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/dodge.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+			<!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/faw.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/fiat.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/ford.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/gmc.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
             </div>
             <!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/hummer.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/hyundai.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/isuzu.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/jaguar.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/jeep.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/kia.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/landrover.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/lexus.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/lincoln.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mazda.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mercedesbenz.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mercury.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!-- /.row -->
+            <div class="row" >
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mini.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mazda.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mercedesbenz.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+							<div class="panelCenterImg"><img alt="uno" src="css/images/mercury.jpg"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
         </div>
         <!-- /#page-wrapper -->
 
@@ -165,7 +286,59 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2.js"></script>
-
+	
+	<script type="text/javascript">
+	$(document).ready( function() {
+		
+		
+		/*
+		
+		var logos = ["vw.jpg","bmw.jpg","vw.jpg","bmw.jpg","vw.jpg","bmw.jpg","vw.jpg","bmw.jpg","vw.jpg","bmw.jpg","vw.jpg","bmw.jpg","vw.jpg","bmw.jpg","vw.jpg","bmw.jpg","vw.jpg","bmw.jpg"];
+		
+		
+		
+		
+		
+		
+		var panelId =""; 
+		for(var i=0; i<logos.length; i++){
+			if(i%4 == 0){	
+				console.log("uno --- i: "+i);
+				panelId = "panelRow_"+i;
+				var panelRow = "<div class='row "+panelId+"' id='"+panelId+"'></div>";				
+				$(".gridLogos").append(panelRow);
+				
+				var panel  = "<div class='col-lg-3'>";
+				panel += "<div class='panel panel-primary'>";
+				panel += "<div class='panel-body'>";
+				panel += "<div class='panelCenterImg'><img alt='uno' src='css/images/"+logos[i]+"' id='"+logos[i]+"' class='armadoras'></div>";
+				panel += "</div>";
+				panel += "</div>";
+				panel += "</div>";
+				$("."+panelId).append(panel);	
+								
+			}else{
+					var panel  = "<div class='col-lg-3'>";
+					panel += "<div class='panel panel-primary'>";
+					panel += "<div class='panel-body'>";
+					panel += "<div class='panelCenterImg'><img alt='uno' src='css/images/"+logos[i]+"' id='"+logos[i]+"' class='armadoras'></div>";
+					panel += "</div>";
+					panel += "</div>";
+					panel += "</div>";
+					$("."+panelId).append(panel);	
+			}		*/	
+		}
+		
+		$(".armadoras").click(function(env){
+			console.log($(this).attr( "id" ));
+		});
+		
+		$("#busquedaBtn").click(function(env){
+			console.log("buscar: "+$("#textBusqueda").val());
+		});
+	});
+	</script>
+	
 </body>
 
 </html>
