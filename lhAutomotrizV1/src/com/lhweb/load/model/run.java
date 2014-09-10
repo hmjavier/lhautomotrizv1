@@ -12,7 +12,7 @@ public class run {
 		//automaker.create();
 		//AutomakerController.getAll();
 		
-		AutomakerController.getCarsByAutomaker("vw");
+		//AutomakerController.getCarsByAutomaker("vw"); 
 
 	
 		
