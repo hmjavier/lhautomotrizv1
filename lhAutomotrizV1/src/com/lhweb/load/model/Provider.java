@@ -2,7 +2,9 @@ package com.lhweb.load.model;
 
 import java.util.List;
 
-public class Automaker implements PersistentDomainObject {
+public class Provider implements PersistentDomainObject{
+
+
 	
 	private String _id;
 	private String name;
@@ -10,16 +12,16 @@ public class Automaker implements PersistentDomainObject {
 	
 	
 	
-	public Automaker(){
+	public Provider(){
 		
 	}
 	
-	public Automaker(String name, List<String> cars){
+	public Provider(String name, List<String> cars){
 		this.name=name;
 		this.cars=cars;
 	}
 	
-	public Automaker(String _id, String name, List<String> cars){		
+	public Provider(String _id, String name, List<String> cars){		
 		this._id =_id;
 		this.name=name;
 		this.cars=cars;
@@ -59,7 +61,7 @@ public class Automaker implements PersistentDomainObject {
 	
 	/* ---   Methods from Interface*/
 	public void create(){
-		AutomakersHandler.create(this);		
+		ProvidersHandler.create(this);		
 	}
 	
 	public void update(){
@@ -77,5 +79,6 @@ public class Automaker implements PersistentDomainObject {
 	}
 	
 	
+
 	
 }

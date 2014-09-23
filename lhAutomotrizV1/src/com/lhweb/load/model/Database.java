@@ -8,6 +8,7 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 import com.mongodb.DBCursor;
 
+import java.net.UnknownHostException;
 import java.util.*;
 
 
@@ -25,7 +26,7 @@ public class Database {
     }
 
 
-    public Database(final String hostname, final int port, final String dbName){
+    public Database(String hostname, int port,String dbName){
     	//TODO set user & password for secure reasons
     	this.hostname=hostname;
     	this.port=port;
@@ -47,6 +48,26 @@ public class Database {
         mongoClient.close();
     }
 
+    
+    
+    
+    public  void getService(){
+    	
+		/** If you want to use another database services in the runtime you must create another getService2,3,4.. methods*/
+    	
+    	 try {
+			mongoClient = new MongoClient("127.0.0.1",27017);
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 db = mongoClient.getDB("LHA");
+		 
+    }
+    
+    
+    
+    
 
     public void createPerson(){
     	
@@ -116,12 +137,14 @@ public class Database {
      * building up a document that looks like the document we’re looking for.*/
     
     //public  List<Map<String,Object>>runQuery(Map<String,Object> query,String collectionName){
-    public  List<DBObject>runQuery(DBObject query,String collectionName){
+    public  List<DBObject>runQuery(DBObject query,DBObject fields,String collectionName){
     	
     	List<DBObject> resultSet =  new ArrayList<DBObject>();
     	
     	DBCollection collection = db.getCollection(collectionName);
-    	DBCursor cursor = collection.find();
+    	DBCursor cursor = collection.find(query,fields);
+    	//DBObject q =  new BasicDBObject("name","Audi");
+    	//DBCursor cursor = collection.find(q);
     	
     	//List obj = collection.find( query ).skip( 1000 ).limit( 100 ).toArray();
     	 
@@ -217,6 +240,7 @@ public class Database {
 
     
     /* former method */
+    
     public List<HashMap<Object,Object>> getAllDocuments(String collectionName) {
         List<HashMap<Object,Object>> resultSet = new ArrayList<HashMap<Object,Object>>();
         DBCollection collection = db.getCollection(collectionName);
@@ -244,6 +268,30 @@ public class Database {
 
         return resultSet;
     }
+
+    
+    public static List<String> stringFormattedToStringList(String s) {
+        //public static List<String> stringFormattedToStringList(String s) {
+
+            List<String> result = new ArrayList<String>();
+            List<String> aux;
+            aux =  Arrays.asList(s.substring(1,s.length()-1).replaceAll("\"", "").split(","));
+            // .substring  removes the first an last characters from the string ('[' & ']')
+            // .replaceAll removes all quotation marks from the string (replaces with empty string)
+            // .split brakes the string into a string array on commas (omitting the commas)
+            // Arrays.asList converts the array to a List
+            /**
+             * Example of string that handle
+             * [ "auto 1", "auto 2", "auto 3"]
+             *
+             */
+
+            for(int i=0;i<aux.size() ; i++) {
+                result.add(aux.get(i).trim()); //.trim() - clean extra white spaces
+            }
+
+            return result;
+        }
 
 	
         

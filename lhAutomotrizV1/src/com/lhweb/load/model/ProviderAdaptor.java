@@ -1,12 +1,10 @@
 package com.lhweb.load.model;
 
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
+public class ProviderAdaptor {
 
-
-public final class AutomakerAdaptor {
 	
 	
 	public static final DBObject toDBObject(Automaker automaker) {
@@ -45,5 +43,5 @@ public final class AutomakerAdaptor {
 	}
 	 
 	 	 
-	 
+
 }
