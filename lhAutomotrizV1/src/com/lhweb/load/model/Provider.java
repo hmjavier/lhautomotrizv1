@@ -1,6 +1,5 @@
 package com.lhweb.load.model;
 
-import java.util.List;
 
 public class Provider implements PersistentDomainObject{
 
@@ -8,7 +7,7 @@ public class Provider implements PersistentDomainObject{
 	
 	private String _id;
 	private String name;
-	private List<String> cars;
+	
 	
 	
 	
@@ -16,15 +15,13 @@ public class Provider implements PersistentDomainObject{
 		
 	}
 	
-	public Provider(String name, List<String> cars){
+	public Provider(String name){
 		this.name=name;
-		this.cars=cars;
 	}
 	
-	public Provider(String _id, String name, List<String> cars){		
+	public Provider(String _id, String name){		
 		this._id =_id;
-		this.name=name;
-		this.cars=cars;
+		this.name=name;	
 	}
 	
 	
@@ -39,9 +36,6 @@ public class Provider implements PersistentDomainObject{
 		return name;
 	}
 	
-	public List<String> getCars() {
-		return cars;
-	}
 	
 	public void set_id(String _id) {
 		this._id = _id;
@@ -51,9 +45,6 @@ public class Provider implements PersistentDomainObject{
 		this.name = name;
 	}
 	
-	public void setCars(List<String> cars) {
-		this.cars = cars;
-	}
 	
 	
 	
@@ -74,8 +65,7 @@ public class Provider implements PersistentDomainObject{
 	
 	public void print(){
 		System.out.println("_Id => " + this.get_id() + 
-							"\nName => " + this.getName() + 
-							"\nCars => " + this.getCars());
+							"\nName => " + this.getName());
 	}
 	
 	

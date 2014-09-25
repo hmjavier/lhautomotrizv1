@@ -7,39 +7,38 @@ public class ProviderAdaptor {
 
 	
 	
-	public static final DBObject toDBObject(Automaker automaker) {
+	public static final DBObject toDBObject(Provider provider) {
 		 
-		 DBObject automakerObj = new BasicDBObject();
+		 DBObject providerObj = new BasicDBObject();
 		 
-		 if(automaker.get_id() != null){
+		 if(provider.get_id() != null){
 			 
 			 //DBObject 
-			 automakerObj = new BasicDBObject("_id",automaker.get_id()).append( "name", automaker.getName())
-					 															.append("cars", automaker.getCars());
+			 providerObj = new BasicDBObject("_id",provider.get_id()).append( "name", provider.getName());
 			 
 		 }
 		 else{
 			 //DBObject 
-			 automakerObj = new BasicDBObject( "name", automaker.getName()).append("cars", automaker.getCars());
+			 providerObj = new BasicDBObject( "name", provider.getName());
 		 }
 		 
 		 
 		 
-		 return automakerObj;
+		 return providerObj;
 		 
 	 }
 	
 	
 	
-	public static final Automaker toAutomaker(DBObject automakerDBObject){
+	public static final Provider toProvider(DBObject providerDBObject){
 		
-		Automaker automaker =  new Automaker();
+		Provider provider =  new Provider();
 		
-		automaker.set_id(automakerDBObject.get("_id").toString());
-		automaker.setName(automakerDBObject.get("name").toString());
-		automaker.setCars(Database.stringFormattedToStringList(automakerDBObject.get("cars").toString()));
+		provider.set_id(providerDBObject.get("_id").toString());
+		provider.setName(providerDBObject.get("name").toString());
 		
-		return automaker;
+		
+		return provider;
 	}
 	 
 	 	 

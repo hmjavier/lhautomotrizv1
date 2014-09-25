@@ -2,6 +2,7 @@ package com.lhweb.load.model;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
@@ -23,7 +24,7 @@ public class ProvidersHandler {
 	 
 	 
 	 
-	 private static  List<Automaker> getDocuments(DBObject query,DBObject fields){
+	 private static  List<Provider> getDocuments(DBObject query,DBObject fields){
 		 
 		 /**
 		  * The inputs are dbObjects that's why is private , not mix this DB classes 
@@ -40,31 +41,38 @@ public class ProvidersHandler {
 		 Database db =  new Database();
 		 db.getService();
 		 
-		 List<DBObject> automakerDBObjectList = new ArrayList<DBObject>();
-		 List<Automaker> automakerList =  new ArrayList<Automaker>();
+		 List<DBObject> providerDBObjectList = new ArrayList<DBObject>();
+		 List<Provider> providerList =  new ArrayList<Provider>();
 
 		 
-		 automakerDBObjectList = db.runQuery(query,fields,"automakers");
+		 providerDBObjectList = db.runQuery(query,fields,"providers");
 		 
-		 for(DBObject dbObject : automakerDBObjectList){
-			 automakerList.add(AutomakerAdaptor.toAutomaker(dbObject));
+		 for(DBObject dbObject : providerDBObjectList){
+			 providerList.add(ProviderAdaptor.toProvider(dbObject));
 		 }
 		 
 		 db.close();
 		 
 		 		 
-		 return automakerList;
+		 return providerList;
 	     
 	 }
 	 
 	 
 	 
-	 public static List<Automaker> getAllDocuments(){
+	 public static List<Provider> getAllDocuments(){
 		 
 		 DBObject query =  new BasicDBObject();
-		 DBObject fields =  new BasicDBObject();
-		 
+		 DBObject fields =  new BasicDBObject();		 
 		 return  getDocuments(query,fields); 
+		 
+		 /*
+		  * how to :
+		  *  for (Provider provider : ProvidersHandler.getAllDocuments())
+		  *  {
+		  * 	provider.print();
+		  *  }
+		  * */
 		 		 
 	 }
 	 

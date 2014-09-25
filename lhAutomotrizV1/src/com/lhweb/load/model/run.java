@@ -16,6 +16,13 @@ public class run {
 		
 		//AutomakerHandler.getCarsByAutomaker("vw"); 
 		AutomakersHandler.getCarsByAutomakerPicture("vw");
+		
+		
+		//providers
+		for (Provider provider : ProvidersHandler.getAllDocuments()){
+			
+			provider.print();
+		}
 
 	
 		
