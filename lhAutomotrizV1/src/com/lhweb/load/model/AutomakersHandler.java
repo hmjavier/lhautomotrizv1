@@ -2,7 +2,7 @@ package com.lhweb.load.model;
 
 import java.util.ArrayList;
 //import java.util.Arrays;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.List;
 
 import com.mongodb.BasicDBObject;
@@ -75,7 +75,8 @@ public class AutomakersHandler {
 	 
 		
 		
-		//former- using List of HashMaps
+		//former- using List of HashMaps --   deprecated
+	 /*
 		public static List<HashMap<Object,Object>> getAll(){
 			List<HashMap<Object,Object>> resultSet = new ArrayList<HashMap<Object,Object>>();
 			
@@ -91,9 +92,11 @@ public class AutomakersHandler {
 			
 			return resultSet;
 		}
-		
+		*/
 
 		
+		// deprecated 
+		/*
 		public static  String[] getCarsByAutomaker(String pictureName){
 			//List<String> cars =  new ArrayList<String>();		
 			
@@ -121,9 +124,9 @@ public class AutomakersHandler {
 			return carsString;
 		}
 		
+		*/
 		
 		
-		// right way to implement getCarsByAutomaker
 		public static  List<String> getCarsByAutomakerPicture(String pictureName){
 						
 			DBObject query =  new BasicDBObject("picture",pictureName);

@@ -61,12 +61,12 @@ public class Database {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 db = mongoClient.getDB("LHA");
+    	 db = mongoClient.getDB("LHA");
+    	 //db = mongoClient.getDB("LHA_TestDB");
 		 
     }
     
-    
-    
+  
     
 
     public void createPerson(){

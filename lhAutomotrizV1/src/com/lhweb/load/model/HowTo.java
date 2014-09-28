@@ -3,7 +3,7 @@ package com.lhweb.load.model;
 
 import java.util.*;
 
-public class Main {
+public class HowTo {
 
     public static void main(String[] args) {
 
@@ -493,7 +493,36 @@ public class Main {
 
 
 
-
+        /**
+         * Automakers    ------------------------------
+         */
+        
+        /*create */
+        	//import java.util.*;
+        	//Automaker automaker = new Automaker("41","Kia", Arrays.asList("sportage","spectra","rio"));		
+			//automaker.create();
+        
+        /**/
+        	//AutomakersHandler.getAllDocuments().get(1).print();		
+			//System.out.println(AutomakersHandler.getAllDocuments().get(0).getName());
+		
+			//AutomakersHandler.getCarsByAutomaker("vw");/* to be deleted*/ 
+			//AutomakersHandler.getCarsByAutomakerPicture("vw");
+		
+        
+        
+        
+        
+        /**
+         *   Providers    ------------------------------
+         */
+        
+        	//for (Provider provider : ProvidersHandler.getAllDocuments()){
+        		//provider.print();
+			//}
+         
+        
+        
 
 
 
